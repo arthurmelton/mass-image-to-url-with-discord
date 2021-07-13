@@ -1,0 +1,23 @@
+{
+  "name": "mass-image-to-url-with-discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMTitan/mass-image-to-url-with-discord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AMTitan/mass-image-to-url-with-discord/issues"
+  },
+  "homepage": "https://github.com/AMTitan/mass-image-to-url-with-discord#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "nodemon": "^2.0.12"
+  }
+}
