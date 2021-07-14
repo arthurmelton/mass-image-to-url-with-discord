@@ -7,9 +7,9 @@ try {
         console.log('The file does not exist so trying to make it.');
         fs.writeFileSync('Config.json', "{\n" +
             "  \"Token\": \"(discord bot token)\",\n" +
-            "  \"Your_Discord_Id\": \"(id)\",\n" +
-            "  \"Image_Folder_Path\": \"(path)\",\n" +
-            "  \"OutPut_Path\": \"(path)\"\n" +
+            "  \"Your_Discord_Id\": \"(Your discord id or someone you hate bc it will mass message them)\",\n" +
+            "  \"Image_Folder_Path\": \"(File directory path)\",\n" +
+            "  \"OutPut_Path\": \"(The file that all the urls will go to)\"\n" +
             "}", function(err) {
             if (err) {
                 console.error(err);
