@@ -27,19 +27,26 @@ try {
 const config = JSON.parse(fs.readFileSync("Config.json"));
 const { Client, MessageAttachment } = require('discord.js');
 const client = new Client();
+var ProgressBar = require('progress');
 
 fs.writeFileSync(config.OutPut_Path, "")
 
 client.on('ready', () => {
     fs.readdir(config.Image_Folder_Path, (err, files) => {
+        var bar = new ProgressBar(` [:bar] :current/:total :percent :etas`, {
+            complete: '=',
+            incomplete: ' ',
+            width: 20,
+            total: files.length
+        });
         files.forEach(file => {
             const attachment = new MessageAttachment(`${config.Image_Folder_Path}/${file}`);
             client.users.cache.get(config.Your_Discord_Id).send(attachment)
                 .then(function(messageSent) {
-                    console.log(messageSent.attachments.first().url);
                     fs.writeFileSync(config.OutPut_Path, `${fs.readFileSync(config.OutPut_Path)}\n${messageSent.attachments.first().url}`);
+                    bar.tick(1);
                 })
-                .catch(console.error);
+                .catch({console.error; bar.tick(1);});
         })
     })
 });
