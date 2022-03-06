@@ -6,7 +6,8 @@
   "Token": "(discord bot token)",
   "Your_Discord_Id": "(Your discord id or someone you hate bc it will mass message them)",
   "Image_Folder_Path": "(File directory path)",
-  "OutPut_Path": "(The file that all the urls will go to)"
+  "OutPut_Path": "(The file that all the urls will go to)",
+  "Delete": "(True or False)"
 }
 ```
 
