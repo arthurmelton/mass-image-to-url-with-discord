@@ -1,6 +1,7 @@
 # mass-image-to-url-with-discord
 
 # To run
+make a file called `Config.json` and set this contents to this
 ```json
 {
   "Token": "(discord bot token)",
